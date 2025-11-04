@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Black+Han+Sans&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Oi&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/129dfc97b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <header class="resizer">
+            <div class="head_wrap align-items-start align-items-lg-end d-flex justify-content-between">
+                <img src="img/white_logo.png" alt="로고">
+                
+                <div class="gnb_wrap d-flex align-items-end align-items-lg-start flex-column-reverse flex-lg-row">
+                    <div class="collapse nav-collapse d-lg-block" id="navbarSupportedContent">
+                    <ul class="nav flex-column d-flex flex-lg-row justify-content-between">
+                        <li class="nav-item"><a href="#" class="nav-link spillover">SPILLOVER
+                            <ul class="nav_sub">
+                                <li>스필오버란?</li>
+                                <li>스필오버 가입문의</li>
+                            </ul>
+                        </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link menu">메뉴
+                            <ul class="nav_sub">
+                                <li>커피</li>
+                                <li>음료/티</li>
+                                <li>음식</li>
+                            </ul>
+                        </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link coffeeart">커피아트
+                            <ul class="nav_sub">
+                                <li>커피아트란?</li>
+                                <li>커피아트 갤러리</li>
+                                <li>커피아트 키트</li>
+                            </ul>
+                        </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link event">이벤트&알림
+                            <ul class="nav_sub">
+                                <li>이벤트</li>
+                                <li>공지사항</li>
+                            </ul>
+                            <a></li>
+                        <li class="nav-item"><a href="#" class="nav-link burial">매장
+                            <ul class="nav_sub">
+                                <li>매장위치</li>
+                                <li>매장소개</li>
+                                <li>신규입점제의</li>
+                            </ul>
+                        </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link comunity">커뮤니티
+                            <ul class="nav_sub">
+                                <li>SNS</li>
+                                <li>낙서 담벼락</li>
+                            </ul>
+                        </a></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="img/SVG/menu_bar.svg" alt="메뉴바"></span></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main_wrap resizer d-flex flex-column justify-content-between">
+                <h1 class="main_title">커피와 함께<br>영감을 얻으세요!</h1>
+                <p>커피와 함께 하는 하루는 사소한 번뜩임 속에서<br>아이디어를 찾는데 좋은 나날입니다. 머릿속에<br>아이디어를 가두어 두지 말고 풀어내어 함께하세요!</p>
+                <a href="#"><div class="btn">MORE</div></a>
+            </div>
+        </main>
+        <section class="section1">
+            <div class="s1_wrap resizer ">
+                <div class="s1_menu_wrap ">
+                    <h3>MENU</h3>
+                    <div class="s1_menu_btn_wrap">
+                        <div class="btn btn_active" data-target="swiper1">Coffee</div>
+                        <div class="btn" data-target="swiper2">Drink</div>
+                        <div class="btn" data-target="swiper3">Food</div>
+                    </div>
+                </div>
+                <div class="img_wrapper">
+                    <div id="swiper1" #swiperRef="" class="swiper swiper_controle visible">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide" data-alt="콜드브루"><img src="img/coffee1.png" alt="콜드브루"><p>콜드브루</p></div>
+                            <div class="swiper-slide" data-alt="연유라떼"><img src="img/coffee2.png" alt="연유라떼"><p>연유라떼</p></div>
+                            <div class="swiper-slide" data-alt="카페라떼"><img src="img/coffee3.png" alt="카페라떼"><p>카페라떼</p></div>
+                            <div class="swiper-slide" data-alt="추가커피1"><img src="img/coffee1.png" alt="추가커피1"><p>추가커피1</p></div>
+                            <div class="swiper-slide" data-alt="추가커피2"><img src="img/coffee2.png" alt="추가커피2"><p>추가커피2</p></div>
+                            <div class="swiper-slide" data-alt="추가커피3"><img src="img/coffee3.png" alt="추가커피3"><p>추가커피3</p></div>
+                        </div>
+                    </div>
+                    <div id="swiper2" #swiperRef="" class="swiper swiper_controle">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide" data-alt="킬드브루"><img src="img/coffee1.png" alt="콜드브루"><p>두유</p></div>
+                            <div class="swiper-slide" data-alt="연유라떼"><img src="img/coffee2.png" alt="연유라떼"><p>파자마</p></div>
+                            <div class="swiper-slide" data-alt="카페라떼"><img src="img/coffee3.png" alt="카페라떼"><p>수박쥬스</p></div>
+                            <div class="swiper-slide" data-alt="추가커피1"><img src="img/coffee1.png" alt="추가커피1"><p>아이스티</p></div>
+                            <div class="swiper-slide" data-alt="추가커피2"><img src="img/coffee2.png" alt="추가커피2"><p>미숫가루</p></div>
+                            <div class="swiper-slide" data-alt="추가커피3"><img src="img/coffee3.png" alt="추가커피3"><p>콜라</p></div>
+                        </div>
+                    </div>
+                    <div id="swiper3" #swiperRef="" class="swiper swiper_controle">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide" data-alt="칼드브루"><img src="img/coffee1.png" alt="콜드브루"><p>단팥빵</p></div>
+                            <div class="swiper-slide" data-alt="연유라떼"><img src="img/coffee2.png" alt="연유라떼"><p>크로와상</p></div>
+                            <div class="swiper-slide" data-alt="카페라떼"><img src="img/coffee3.png" alt="카페라떼"><p>식빵</p></div>
+                            <div class="swiper-slide" data-alt="추가커피1"><img src="img/coffee1.png" alt="추가커피1"><p>공갈빵</p></div>
+                            <div class="swiper-slide" data-alt="추가커피2"><img src="img/coffee2.png" alt="추가커피2"><p>계란빵</p></div>
+                            <div class="swiper-slide" data-alt="추가커피3"><img src="img/coffee3.png" alt="추가커피3"><p>마늘빵</p></div>
+                        </div>
+                    </div>
+                    <div class="swiper_btn_wrap">
+                        <div id="s1_btnP" class="swiper-button-prev sbtn"><img src="img/s1_prev_btn.png" alt="이전버튼"></div>
+                        <div id="s1_btnN" class="swiper-button-next sbtn"><img src="img/s1_right_btn.png" alt="다음버튼"></div>
+                       </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="h1 resizer">GALLERY</div>
+            <div class="s2_wrap resizer">
+                <div class="s2_bg1"><img class="resizer" src="img/Gallery_deco_img.png" alt="섹션2 배경이미지"></div>
+                <div class="s2_bg_ringL"><img src="img/coffee_ring_left.png" alt=""></div>
+                <div class="s2_bg_ringR"><img src="img/coffee_ring_right.png" alt=""></div>
+                <div class="swiper bigSlide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/gallery_coffee_1.jpeg" alt="갤러리 커피 그림1"></div>
+                        <div class="swiper-slide"><img src="img/gallery_coffee_2.jpeg" alt="갤러리 커피 그림2"></div>
+                        <div class="swiper-slide"><img src="img/gallery_coffee_3.jpeg" alt="갤러리 커피 그림3"></div>
+                        <div class="swiper-slide"><img src="img/gallery_coffee_4.jpeg" alt="갤러리 커피 그림4"></div>
+                        <!-- <div class="swiper-slide"><img src="img/gallery_coffee_5.jpeg" alt="갤러리 커피 그림5"></div> -->
+                    </div> 
+                    <div id="s2_btnN" class="swiper-button-next"></div>
+                    <div id="s2_btnP" class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper smallSlide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/gallery_coffee_1.jpeg" alt="갤러리 커피 그림1"></div>
+                        <div class="swiper-slide"><img src="img/gallery_coffee_2.jpeg" alt="갤러리 커피 그림2"></div>
+                        <div class="swiper-slide"><img src="img/gallery_coffee_3.jpeg" alt="갤러리 커피 그림3"></div>
+                        <div class="swiper-slide"><img src="img/gallery_coffee_4.jpeg" alt="갤러리 커피 그림4"></div>
+                        <!-- <div class="swiper-slide"><img src="img/gallery_coffee_5.jpeg" alt="갤러리 커피 그림5"></div> -->
+                    </div>
+                </div>
+                <div class="btn s2_more">MORE</div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="s3_wrap resizer">
+                <h1 class="s3_title">ONEDAY CLASS</h1>
+                <div class="s3_contents_wrap flex-column flex-xxl-row d-flex justify-content-between">
+                    <div class="con_left">
+                        <div class="con_toggle d-flex justify-content-between">
+                            <div class="toggle toggle_on" data-target="drawing_con">커피드로잉</div>
+                            <div class="toggle" data-target="paint_con">커피 물감 만들기</div>
+                        </div>
+                        <div  class="left_contents_wrap">
+                            <div id="drawing_con" class="article_wrap visible">
+                                <div class="con_img"><img src="img/onday_drawing_img.jpg" alt="커피 그림 이미지"></div>
+                                <div class="article_text">
+                                    <h3>커피 드로잉</h3>
+                                    <p>커피와 함께 그림을 그려보는 체험학습
+                                    클래스 입니다. 커피를 어떻게 칠하면
+                                    좋을지 어떻게 말리면 예쁘게 보일지
+                                    알아가는 재미를 느끼면서, 향기로운
+                                    커피향을 즐기실 수 있습니다.</p>
+                                </div>
+                            </div>
+                             <div id="paint_con" class="article_wrap">
+                                <div class="con_img"><img src="img/onday_paint_img.jpg" alt="커피 그림 이미지"></div>
+                                <div class="article_text">
+                                    <h3>커피 드로잉</h3>
+                                    <p>커피와 함께 그림을 그려보는 체험학습
+                                    클래스 입니다. 커피를 어떻게 칠하면
+                                    좋을지 어떻게 말리면 예쁘게 보일지
+                                    알아가는 재미를 느끼면서, 향기로운
+                                    커피향을 즐기실 수 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="con_right d-flex flex-column align-items-end">
+                        <div class="callender_wrap">
+                            <div class="color_guide d-flex flex-wrap align-items-center justify-content-between">
+                                <div class="drawing_color"></div>
+                                <div class="color_name"><p>커피 드로잉</p></div>
+                                <div class="paint_color"></div>
+                                <div class="color_name"><p>커피 물감</p></div>
+                            </div>
+                            <div class="cal_title_wrap d-flex justify-content-between align-items-center">
+                                <i class="fa-sharp fa-solid fa-chevron-left" style="color: #f6f3ec;"></i>
+                                <p>10월</p>
+                                <i class="fa-sharp fa-solid fa-chevron-right" style="color: #f6f3ec;"></i>
+                            </div>
+                            <div class="month_wrap">
+                                <ul class="day_wrap d-flex">
+                                    <li>일</li>
+                                    <li>월</li>
+                                    <li>화</li>
+                                    <li>수</li>
+                                    <li>목</li>
+                                    <li>금</li>
+                                    <li>토</li>
+                                </ul>
+                                <div class="dayNumber_wrap d-flex flex-wrap">
+                                    <div class="other_month_day">28</div>
+                                    <div class="other_month_day">29</div>
+                                    <div class="other_month_day">30</div>
+                                    <div class="class_day">1
+                                        <div class="drawing_color"></div>
+                                    </div>
+                                    <div class="class_day">2
+                                        <div class="paint_color"></div>
+                                    </div>
+                                    <div class="red_day"><p>개천절</p>3</div>
+                                    <div class="class_day">4
+                                        <div class="drawing_color"></div>
+                                        <div class="paint_color"></div>
+                                    </div>
+                                    <div class="red_day"><p>추석연휴</p>5</div>
+                                    <div class="red_day"><p>추석</p>6</div>
+                                    <div class="red_day"><p>추석연휴</p>7</div>
+                                    <div class="red_day"><p>추석연휴</p>8</div>
+                                    <div class="red_day"><p>한글날</p>9</div>
+                                    <div>10</div>
+                                    <div class="class_day">11
+                                        <div class="drawing_color"></div>
+                                        <div class="paint_color"></div>
+                                    </div>
+                                    <div>12</div>
+                                    <div class="class_day">13
+                                        <div class="drawing_color"></div>
+                                    </div>
+                                    <div class="class_day">14
+                                        <div class="paint_color"></div>
+                                    </div>
+                                    <div class="class_day">15
+                                        <div class="drawing_color"></div>
+                                    </div>
+                                    <div class="class_day">16
+                                        <div class="paint_color"></div>
+                                    </div>
+                                    <div class="class_day">17
+                                        <div class="drawing_color"></div>
+                                    </div>
+                                    <div class="class_day">18
+                                        <div class="drawing_color"></div>
+                                        <div class="paint_color"></div>
+                                    </div>
+                                    <div>19</div>
+                                    <div class="class_day">20
+                                        <div class="drawing_color"></div>
+                                    </div>
+                                    <div class="class_day">21
+                                        <div class="paint_color"></div>
+                                    </div>
+                                    <div class="class_day">22
+                                        <div class="drawing_color"></div>
+                                    </div>
+                                    <div class="class_day">23
+                                        <div class="paint_color"></div>
+                                    </div>
+                                    <div class="class_day">24
+                                        <div class="drawing_color"></div>
+                                    </div>
+                                    <div class="class_day">25
+                                        <div class="drawing_color"></div>
+                                        <div class="paint_color"></div>
+                                    </div>
+                                    <div>26</div>
+                                    <div class="class_day">27
+                                        <div class="drawing_color"></div>
+                                    </div>
+                                    <div class="class_day">28
+                                        <div class="paint_color"></div>
+                                    </div>
+                                    <div class="class_day">29
+                                        <div class="drawing_color"></div>
+                                    </div>
+                                    <div class="class_day">30
+                                        <div class="paint_color"></div>
+                                    </div>
+                                    <div class="class_day">31
+                                        <div class="drawing_color"></div>
+                                    </div>
+                                    <div class="other_month_day">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#"><div class="booking btn">예약하기</div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="s4_wrap resizer d-flex flex-column">
+                <h1>SNS</h1>
+                <div class="s4_con_wrap d-flex justify-content-between">
+                    <div class="sns_wrap youtube">
+                        <div class="sns_title d-flex justify-content-between align-items-end">
+                            <span><p>YOUTUBE</p></span>
+                            <a href="#"><p>MORE</p></a>
+                        </div>
+                        <div class="youtube_wrap">
+                            <img src="img/youtube_image.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sns_wrap instagram">
+                        <div class="sns_title d-flex justify-content-between align-items-end">
+                            <span><p>INSTAGRAM</p></span>
+                            <a href="#"><p>MORE</p></a>
+                        </div>
+                        <div class="instagram_wrap">
+                            <div class="insta_img"><img src="img/instagram_img.jpg" alt="인스타그램 이미지"></div>
+                            <div class="sns_describe d-flex flex-column align-items-end">
+                                <p>원두를 얼마나 볶느냐에 따라 색깔이 달라진다는 사실을 아셨나요?</p>
+                                <span><p>1 day ago</p></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sns_wrap xtweeter">
+                        <div class="sns_title d-flex justify-content-between align-items-end">
+                            <span><img src="img/X_vector_icon.png" alt=""></span>
+                            <a href="#"><p>MORE</p></a>
+                        </div>
+                        <div class="xtweeter_wrap">
+                            <div class="tweeter_img"><img src="img/x_img.jpg" alt="엑스 이미지"></div>
+                            <div class="sns_describe d-flex flex-column align-items-end">
+                                <p>세계 각 지역에 따른 커피의 종류와 향기의 흥미로움</p>
+                                <span><p>18 hours ago</p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_wrap resizer d-flex flex-column flex-md-row align-items-center align-items-md-none justify-content-between">
+                <div class="footer_logo"><img src="img/logo.png" alt="로고"></div>
+                <div class="company_info">
+                    <ul class="d-flex justify-content-between">
+                        <li><a href="#">회사소개</a></li>
+                        <li class="mobileNone">/</li>
+                        <li><a href="#">메뉴</a></li>
+                        <li  class="mobileNone">/</li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li  class="mobileNone">/</li>
+                        <li><a href="#">이용약관</a></li>
+                        <li  class="mobileNone">/</li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                    <ul class="info">
+                        <li>(주)스필오버</li>
+                        <li>본사 : 051.747.2759</li>
+                        <li>가맹문의 : 010.7721.9196</li>
+                        <li>hanjw9196@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="sns_link">
+                    <div class="insta_link col d-flex">
+                        <div class="sns_img"><a href="#"><img src="img/insta_vector_icon.png" alt="인스타그램로고"></a></div>
+                        <div class="sns_fellow"><a href="#">Follow</a></div>
+                    </div>
+                    <div class="x_link d-flex">
+                        <div class="sns_img"><a href="#"><img src="img/X_vector_icon.png" alt="인스타그램로고"></a></div>
+                        <div class="sns_fellow"><a href="#">Follow</a></div>
+                    </div>
+                    <div class="youtube_link d-flex">
+                        <div class="sns_img"><a href="#"><img src="img/youtube_vector_icon.png" alt="인스타그램로고"></a></div>
+                        <div class="sns_fellow"><a href="#">Subscribe</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    
+// 페이지네이션 텍스트를 업데이트할 때 사용할 데이터 배열
+
+
+// section1 swiper
+var swiper = new Swiper(".swiper_controle", {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 10,
+  breakpoints:{
+    790:{
+        slidesPerView: 2,
+    },
+    930:{
+        slidesPerView: 3,
+    },
+  },
+  navigation: {
+    nextEl: "#s1_btnN",
+    prevEl: "#s1_btnP",
+  },
+  
+
+});
+var swipersmall = new Swiper(".smallSlide", {
+
+      spaceBetween: 70,
+      slidesPerView: 4,
+
+    });
+
+var swiperbig = new Swiper(".bigSlide", {
+
+    spaceBetween: 10,
+    thumbs: {swiper: swipersmall,},
+    navigation: {
+    nextEl: "#s2_btnN",
+    prevEl: "#s2_btnP",
+  },
+})
+
+
+// 모든 버튼 요소를 선택합니다.
+const buttons = document.querySelectorAll('.s1_menu_btn_wrap>.btn');
+const menuSwiper = document.querySelectorAll('.section1 .swiper')
+// 각 버튼에 클릭 이벤트 리스너를 추가합니다.
+buttons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    // 모든 버튼에서 'active' 클래스를 제거합니다.
+    buttons.forEach(btn => {
+      btn.classList.remove('btn_active');
+      button.classList.add('btn_active');
+
+    });
+    // 클릭된 버튼에만 'active' 클래스를 추가합니다.
+  const targetId = e.target.dataset.target;
+  menuSwiper.forEach(swiper =>{
+    swiper.classList.remove('visible');
+  });
+  const targetSwiper = document.getElementById(targetId);
+  if(targetSwiper){targetSwiper.classList.add('visible')}
+  });
+  
+});
+
+
+// section3 toggle button
+const toggles = document.querySelectorAll('.toggle')
+const conToggle = document.querySelectorAll('.article_wrap')
+toggles.forEach(button => {
+    button.addEventListener('click', (e) => {
+        toggles.forEach(toggle => {
+            toggle.classList.remove('toggle_on');
+            button.classList.add('toggle_on');
+        });
+        const targetId = e.target.dataset.target;
+        conToggle.forEach(article_wrap =>{
+            article_wrap.classList.remove('visible');
+        });
+        const targetArticle = document.getElementById(targetId);
+        if(targetArticle){targetArticle.classList.add('visible')}
+    });
+});
+    
+    
+</script>
+    <link rel="stylesheet" href="css/spillover_script.css">
+</html>
