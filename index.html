@@ -14,7 +14,94 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+<script>
+    
+// 페이지네이션 텍스트를 업데이트할 때 사용할 데이터 배열
 
+
+// section1 swiper
+var swiper = new Swiper(".swiper_controle", {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 10,
+  breakpoints:{
+    790:{
+        slidesPerView: 2,
+    },
+    930:{
+        slidesPerView: 3,
+    },
+  },
+  navigation: {
+    nextEl: "#s1_btnN",
+    prevEl: "#s1_btnP",
+  },
+  
+
+});
+var swipersmall = new Swiper(".smallSlide", {
+
+      spaceBetween: 70,
+      slidesPerView: 4,
+
+    });
+
+var swiperbig = new Swiper(".bigSlide", {
+
+    spaceBetween: 10,
+    thumbs: {swiper: swipersmall,},
+    navigation: {
+    nextEl: "#s2_btnN",
+    prevEl: "#s2_btnP",
+  },
+})
+
+
+// 모든 버튼 요소를 선택합니다.
+const buttons = document.querySelectorAll('.s1_menu_btn_wrap>.btn');
+const menuSwiper = document.querySelectorAll('.section1 .swiper')
+// 각 버튼에 클릭 이벤트 리스너를 추가합니다.
+buttons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    // 모든 버튼에서 'active' 클래스를 제거합니다.
+    buttons.forEach(btn => {
+      btn.classList.remove('btn_active');
+      button.classList.add('btn_active');
+
+    });
+    // 클릭된 버튼에만 'active' 클래스를 추가합니다.
+  const targetId = e.target.dataset.target;
+  menuSwiper.forEach(swiper =>{
+    swiper.classList.remove('visible');
+  });
+  const targetSwiper = document.getElementById(targetId);
+  if(targetSwiper){targetSwiper.classList.add('visible')}
+  });
+  
+});
+
+
+// section3 toggle button
+const toggles = document.querySelectorAll('.toggle')
+const conToggle = document.querySelectorAll('.article_wrap')
+toggles.forEach(button => {
+    button.addEventListener('click', (e) => {
+        toggles.forEach(toggle => {
+            toggle.classList.remove('toggle_on');
+            button.classList.add('toggle_on');
+        });
+        const targetId = e.target.dataset.target;
+        conToggle.forEach(article_wrap =>{
+            article_wrap.classList.remove('visible');
+        });
+        const targetArticle = document.getElementById(targetId);
+        if(targetArticle){targetArticle.classList.add('visible')}
+    });
+});
+    
+    
+</script>
+    <link rel="stylesheet" href="css/spillover_script.css">
 </head>
 <body>
     <div class="wrap">
@@ -390,92 +477,5 @@
         </footer>
     </div>
 </body>
-<script>
-    
-// 페이지네이션 텍스트를 업데이트할 때 사용할 데이터 배열
 
-
-// section1 swiper
-var swiper = new Swiper(".swiper_controle", {
-  slidesPerView: 1,
-  loop: true,
-  spaceBetween: 10,
-  breakpoints:{
-    790:{
-        slidesPerView: 2,
-    },
-    930:{
-        slidesPerView: 3,
-    },
-  },
-  navigation: {
-    nextEl: "#s1_btnN",
-    prevEl: "#s1_btnP",
-  },
-  
-
-});
-var swipersmall = new Swiper(".smallSlide", {
-
-      spaceBetween: 70,
-      slidesPerView: 4,
-
-    });
-
-var swiperbig = new Swiper(".bigSlide", {
-
-    spaceBetween: 10,
-    thumbs: {swiper: swipersmall,},
-    navigation: {
-    nextEl: "#s2_btnN",
-    prevEl: "#s2_btnP",
-  },
-})
-
-
-// 모든 버튼 요소를 선택합니다.
-const buttons = document.querySelectorAll('.s1_menu_btn_wrap>.btn');
-const menuSwiper = document.querySelectorAll('.section1 .swiper')
-// 각 버튼에 클릭 이벤트 리스너를 추가합니다.
-buttons.forEach(button => {
-  button.addEventListener('click', (e) => {
-    // 모든 버튼에서 'active' 클래스를 제거합니다.
-    buttons.forEach(btn => {
-      btn.classList.remove('btn_active');
-      button.classList.add('btn_active');
-
-    });
-    // 클릭된 버튼에만 'active' 클래스를 추가합니다.
-  const targetId = e.target.dataset.target;
-  menuSwiper.forEach(swiper =>{
-    swiper.classList.remove('visible');
-  });
-  const targetSwiper = document.getElementById(targetId);
-  if(targetSwiper){targetSwiper.classList.add('visible')}
-  });
-  
-});
-
-
-// section3 toggle button
-const toggles = document.querySelectorAll('.toggle')
-const conToggle = document.querySelectorAll('.article_wrap')
-toggles.forEach(button => {
-    button.addEventListener('click', (e) => {
-        toggles.forEach(toggle => {
-            toggle.classList.remove('toggle_on');
-            button.classList.add('toggle_on');
-        });
-        const targetId = e.target.dataset.target;
-        conToggle.forEach(article_wrap =>{
-            article_wrap.classList.remove('visible');
-        });
-        const targetArticle = document.getElementById(targetId);
-        if(targetArticle){targetArticle.classList.add('visible')}
-    });
-});
-    
-    
-</script>
-    <link rel="stylesheet" href="css/spillover_script.css">
 </html>
