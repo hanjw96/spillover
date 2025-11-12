@@ -47,7 +47,7 @@ header{position: absolute; z-index: 100; width: 1200px; padding: 0 15px; top: 0;
 
 .coffeeart:hover .nav_sub{display: block;}
 .coffeeart:hover.nav-link:hover li{color: #fff;}
-.coffeeart:hover.nav-link:hover li:hover{color: #0d6efd;}
+.coffeeart:hover.nav-link:hover li  :hover{color: #0d6efd;}
 
 .event:hover .nav_sub{display: block;}
 .event:hover.nav-link:hover li{color: #fff;}
