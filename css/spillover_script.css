@@ -35,8 +35,8 @@ header{position: absolute; z-index: 100; width: 1200px; padding: 0 15px; top: 0;
 .head_wrap{padding-top: 20px;}
 .nav-link{color: white;}
 .nav_sub{padding: 12px 4px 4px 2px; display: none; position: absolute; background-color: rgba(0, 0, 0, 0.1); border-radius: 4px;}
-.nav_sub>li{margin-bottom: 10px;}
-.nav_sub>li:last-child{margin-bottom: 0;}
+.nav_sub li{margin-bottom: 10px;}
+.nav_sub li:last-child{margin-bottom: 0;}
 .spillover:hover .nav_sub{display: block;}
 .spillover:hover.nav-link:hover li{color: #fff;}
 .spillover:hover.nav-link:hover li:hover{color: #0d6efd;}
@@ -65,7 +65,7 @@ header{position: absolute; z-index: 100; width: 1200px; padding: 0 15px; top: 0;
 @media screen and (max-width:992px) {
     .nav-link{position: relative; text-align: right;}
     .nav_sub{top: 0; right: 100%;}
-    .nav_sub>li{width: 140px; text-align: right;}
+    .nav_sub li{width: 140px; text-align: right;}
     .navbar-toggler{display: block;}
 
     .gnb_wrap:has(.show){background-color: rgba(0, 0, 0, 0.1); transition-property: background-color; transition:  0.1s ease-in-out;}
