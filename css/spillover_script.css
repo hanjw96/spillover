@@ -76,7 +76,7 @@ header{position: absolute; z-index: 100; width: 1200px; padding: 0 15px; top: 0;
 /* header end */
 
 /* main */
-main{width: 100%; height: 830px; position: relative; background-image: url(../img/main_img.jpg); background-position: center; background-repeat: no-repeat; padding: 200px 0 100px 0;}
+main{width: 100%; height: 830px; position: relative; background-image: url(../img/main_img.jpg); background-position: center; background-repeat: no-repeat; padding: 200px 0 100px 0; background-color: #140b08;}
 .main_wrap{width: 1200px; height: 100%; padding: 0 15px; margin: 0 auto; color: #fff;}
 .main_title{font-weight: 700; font-size: 60px;}
 .main_wrap>p{font-size: 24px;}
